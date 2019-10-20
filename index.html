@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		 <link rel="stylesheet" href="./css/style.css">
+	    <title>home</title>
+	</head>
+	<body>
+	    <h1 class="login-title">Login</h1>
+	    <form action="backend/login.php" method="POST" class="formulario">
+	        <span class="block-login">
+	            <label for="login-email">Nome</label>
+	            <input name="email" type="email" class="login" placeholder="Insira seu email" required>
+	            <label for="login-password">Senha</label>
+	            <input name="senha" type="password" class="login" placeholder="Insira sua senha" required>
+	        </span>
+	        <button  class="botao">Login</button>
+	        <span class="block-anonimo">
+	            <p onclick="location.assign('cadastro.html')" class="block-anonimo-text">Cadastre-se</p>
+	        </span>
+	    </form>
+	    <ul class="squares">
+	    </ul>
+	    <script src="./js/main.js"></script>
+	</body>
+</html>

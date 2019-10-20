@@ -1,0 +1,204 @@
+/****************************************************************/
+/*                  RESET                                       */
+/****************************************************************/
+
+*
+{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+   background-image: linear-gradient(to top, rgb(179, 174, 174), rgba(255, 255, 255, 0.931));
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-title{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1.5rem;
+}
+/****************************************************************/
+/*                  index.html -Formulario                     */
+/****************************************************************/
+
+.formulario{
+    width: 40vw;
+    min-height: 35vh;
+    background-color: #fff;
+    border-radius: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.botao
+{
+  width: 60%;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: rgba(33, 117, 18, 0.87);
+  border: none;
+  font-size: 18px;
+  color: rgb(236, 240, 4);
+  border-radius: 20px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.block-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login, .nome, .email
+{
+  width: 90%;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid grey;
+  padding: 0.5rem;
+}
+
+label{
+  font-size: 18px;
+  padding: 0.5rem 0 0.5rem 0;
+  margin: 0.5rem 0 0 0;
+  width: 70%;
+}
+
+.block-anonimo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.block-anonimo-text{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.squares li {
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(to left, rgba(224, 228, 12, 0.876), rgba(62, 179, 62, 0.876));
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    animation-name: up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  @keyframes up {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-1000px) rotate(960deg);
+    }
+  }
+/****************************************************************/
+/*                 cadastro.html-Formulario                     */
+/****************************************************************/
+.container-btn
+{
+    width: 70%;
+    display: flex;
+   
+}
+.btn
+{
+    width: 60%;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: rgba(33, 117, 18, 0.87);
+    border: none;
+    font-size: 17px;
+    color: rgb(236, 240, 4);
+    border-radius: 20px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    
+}
+
+/****************************************************************/
+/*                 Pag do Formulario                            */
+/****************************************************************/
+.block-avaliacao{
+  width: 60vw;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+  /* margin-bottom: 2rem; */
+}
+.titulo-form {
+  margin-top: 10px;
+}
+.buttons{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 35px;
+  justify-content: space-around;
+}
+.nota {
+  font-size: 1.3rem;
+}
+.respostas-repetidas {
+  margin-top: 50px;
+  text-align: start;
+}
+.radio-marc {
+  /* display: flex;
+  justify-content: center; */
+  width: 20px;
+}
+.respostas {
+  display: flex;
+  /* flex-direction: column; */
+}
+.texto-livre {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+}
+.emote{
+  width: 70px;
+  animation-name: cara;
+  animation-duration: 600ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes cara {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
